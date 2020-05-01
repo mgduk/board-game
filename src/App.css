@@ -1,6 +1,11 @@
 
 body {
   background: #eee;
+  position: relative;
+  padding-top: 0;
+}
+body > h1 {
+  margin-top: 0;
 }
 
 .App {
@@ -55,14 +60,13 @@ body {
   flex-wrap: wrap;
   position: relative;
   margin: 0 4.5%;
-  background-color: #fff;
   background-size: cover;
   background-position: center center;
   box-shadow: rgba(0,0,0,0.1) 2px 2px 11px;
 }
 
 .Square {
-  height: 12vh;
+  height: 11.5vh;
   flex: 0 13vw;
   overflow: hidden;
   border: 1px solid #ccc;

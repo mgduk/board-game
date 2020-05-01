@@ -108,7 +108,7 @@ const squares = [
   index: 37,
   date: 'December 1, 2004',
   text: 'You have become a professor in the Computer Science Department at University of Southhampton. Smarty pants!',
-  movement: 1,
+  movement: 3,
 },
 {
   index: 39,
@@ -549,7 +549,7 @@ class App extends React.Component {
               </div>
             </div>
          : ''}
-        <ol className="Board" style={{ background: `url(${BOARD_BACKGROUND_URL})` }}>
+        <ol className="Board" style={{ backgroundImage: `url(${BOARD_BACKGROUND_URL})` }}>
           {[...Array(NUM_SQUARES)].map((_, index) =>
             <Square
               key={index}
