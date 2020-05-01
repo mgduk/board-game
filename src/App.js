@@ -175,7 +175,7 @@ const squares = [
   missTurn: 1,
 },
 ];
-const BOARD_BACKGROUND_URL = '/background.jpeg';
+const BOARD_BACKGROUND_URL = 'background.jpeg';
 
 /***********************/
 
