@@ -158,7 +158,22 @@ const squares = [
   index: 27,
   text: "You arrive at CERN and realise you are still in your PJ's. Oops!",
   movement: -7,
-}
+},
+{
+  index: 41,
+  text: "You forgot to have a shower, and are stinking out the whole university!",
+  movement: -5,
+},
+{
+  index: 38,
+  text: "You fell asleep in your own lecture.",
+  movement: -6,
+},
+{
+  index: 44,
+  text: "You have caught a cold.",
+  missTurn: 1,
+},
 ];
 const BOARD_BACKGROUND_URL = '/background.jpeg';
 
@@ -244,7 +259,7 @@ class SquareDetails extends React.Component {
   render() {
     return <div className="SquareDetails modal">
       {this.props.square.date ? <h3>{this.props.square.date}</h3> : ''}
-      {this.props.square.backgroundUrl ? <img src={this.props.square.backgroundUrl} /> : ''}
+      {this.props.square.backgroundUrl ? <img src={this.props.square.backgroundUrl} alt="" /> : ''}
       <p>{this.props.square.text}</p>
       {this.getMovementText()}
       {this.getMissedTurnText()}
